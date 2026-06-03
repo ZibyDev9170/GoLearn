@@ -9,5 +9,5 @@ func main() {
 	mana := 50.0
 	alive := true
 	x, y := 0, 0
-	fmt.Printf("Имя: %s\nУровень: %d\nЗдоровье: %d\nМана: %d\nЖив: %t\nКоординаты: (%d, %d)\n", name, lvl, health, mana, alive, x, y)
+	fmt.Printf("Имя: %s\nУровень: %d\nЗдоровье: %f\nМана: %f\nЖив: %t\nКоординаты: (%d, %d)\n", name, lvl, health, mana, alive, x, y)
 }
