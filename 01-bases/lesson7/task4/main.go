@@ -1,14 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
 func tree(height int) {
 	for i := range height {
-		fmt.Print(strings.Repeat(" ", height-i-1))
-		fmt.Print(strings.Repeat("*", i*2+1))
+		for j := 0; j < height-i-1; j++ {
+			fmt.Print(" ")
+		}
+		for j := 0; j < 2*i+1; j++ {
+			fmt.Print("*")
+		}
 		fmt.Println()
 	}
 }
