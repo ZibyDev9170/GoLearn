@@ -159,7 +159,7 @@ func deleteTask(tasksList map[int]Task) {
 		return
 	}
 	if _, ok := tasksList[id]; ok {
-		delete(tasksList, id) // встроенное удаление — задача исчезает из карты
+		delete(tasksList, id)
 		fmt.Println("Successful task deletion")
 	} else {
 		fmt.Printf("Task with ID %d does not exist\n", id)
